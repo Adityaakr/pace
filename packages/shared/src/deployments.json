@@ -1,0 +1,17 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "deployer": "0x9C7dCfd1E28B467C6AfBcc60b4E9a16ba6f3E0D6",
+  "timestamp": "2026-02-08T19:45:01.078Z",
+  "contracts": {
+    "PaceToken": {
+      "address": "0x937c587FdaF1d49C02AFb0a9C2c991c81b36388f",
+      "initialSupply": "1000000000.0"
+    },
+    "PaceRewards": {
+      "address": "0x300e76fCcb57Fd19899AeAe4030c096620a52e74",
+      "pacePerKm": "10.0",
+      "fundedAmount": "100000000.0"
+    }
+  }
+}

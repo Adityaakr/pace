@@ -1,0 +1,29 @@
+{
+  "name": "pace-dao-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @pace-dao/web dev",
+    "start": "pnpm dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "test": "turbo run test",
+    "dev:web": "pnpm --filter @pace-dao/web dev",
+    "contracts:compile": "pnpm --filter @pace-dao/contracts compile",
+    "contracts:deploy": "pnpm --filter @pace-dao/contracts deploy",
+    "contracts:test": "pnpm --filter @pace-dao/contracts test"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
